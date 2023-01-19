@@ -12,11 +12,13 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assests/css/styles.css">
+        <link rel="stylesheet" href="assests/css/flipcard.css">
 
         <!--==================== CSS ====================-->
         <!-- <link rel="stylesheet" href="assests/css/bootstrap.litera.min.css"> -->
 
         <title>June Man Portfolio</title>
+        <link rel="icon" href="assests/img/June-Man-1.png" type="image/x-icon">
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -32,12 +34,7 @@
 
                             </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user-circle nav__icon"></i> About Me
 
-                            </a>
-                        </li>
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
                                 <i class="uil uil-file-check-alt nav__icon"></i> Skills
@@ -47,6 +44,12 @@
                         <li class="nav__item">
                             <a href="#project" class="nav__link">
                                 <i class="uil uil-suitcase nav__icon"></i> Projects
+
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user-circle nav__icon"></i> About Me
 
                             </a>
                         </li>
@@ -72,7 +75,7 @@
         <!--==================== MAIN ====================-->
         <main class="main"> 
             <!--==================== HOME ====================-->
-            <section class="home section" id="home">
+            <section class="home section" id="home" style ="background-color:white;">
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
@@ -94,15 +97,15 @@
                         </div>
 
                         <div class="home__img">
-                            <image class="home__catpic" src="assests/img/codingsneakcat.png" alt="sneakcat" loading="meow"/>
+                            <image class="home__catpic" src="assests/img/June-Man-1.png" loading="meow"/>
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hello, I'am June Man</h1>
+                            <h1 class="home__title">Hi, I am June Man</h1>
                             <h3 class="home_subtitle"></h3>
-                            <p class="home__description">Create funny things with passion</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-chat button__icon"></i>
+                            <p class="home__description">Full Stack Developer</p>
+                            <a href="#about" class="button button--flex">
+                                About Me <i class="uil uil-chat button__icon"></i>
                             </a>
                         </div>
                     </div>
@@ -118,31 +121,74 @@
                 </div>
             </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle"></span>
 
-                <div class="about__container container grid">
-                    <!-- <img src="assests/img/selfphoto.png" alt="" class="about__img"> -->
-
-                    <div class="about__data">
-                        <p class="about__description">Quickly picking up new abilities, programming languages, 
-                            and problem-solving are among my talents. I am proficient in JavaScript, HTML, CSS, Python, SQL, MongoDB, 
-                            and server-side frameworks.</p>
-
-                        <div class="about__buttons">
-                            <a download="" href="assests/pdf/resume_katinjuneman.pdf" target="blank" class="button button--flex">
-                                Download my resume<i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>        
-            </section>
 
             <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills Set</h2>
+             <!--==============This part can be skip, skill are showed on the resume =================-->
+            <section class="skills section" id="skills" style ="background-color:white;">
+
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="skills__containe container">
+                    <div class = "row">
+                        <div class = "column">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <img class= "skill_img" src="assests/img/Front-End-1.png"
+                                     style="width:300px;height:300px;">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <div class="row"> <span class="fliplabel fliptech">CSS</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">HTML5</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">JavaScript</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">React</span></div>
+    
+                                  </div>
+                                </div>
+                              </div>                           
+                        </div>
+
+                        <div class = "column">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <img class= "skill_img" src="assests/img/Back-End-1.png" style="width:300px;height:300px;">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <div class="row"> <span class="fliplabel fliptech">Flask</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">MySQL</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">PHP</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">Python</span></div>
+                                  </div>
+                                </div>
+                              </div>                            
+                        </div>
+
+                        <div class = "column">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <img class= "skill_img" src="assests/img/Tools-1.png" style="width:300px;height:300px;">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <div class="row"> <span class="fliplabel fliptech">C++</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">C#</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">Java</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">Agile</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">Azure DevOps</span></div>
+                                    <div class="row"> <span class="fliplabel fliptech">Git</span></div>
+                                    
+                                  </div>
+                                </div>
+                              </div>    
+                        </div>                   
+                    </div>               
+                </div>
+        
+                
+                <!-- <h2 class="section__title">Skills Set</h2>
                 <span class="section__subtitle"></span>
 
                 <div class="skills__containe container">
@@ -154,13 +200,11 @@
                         <img src="assests/img/icons8-css3-90.png" alt="" class = "skills__icon" id="css_icon"/>
                         <img src="assests/img/icons8-javascript-logo-80.png" alt="" class = "skills__icon" id="js_icon"/>
                         <img src="assests/img/icons8-mysql-logo-90.png" alt="" class = "skills__icon" id="mysql_icon"/>
-                        <!--<img src="assests/img/icons8-mongodb-a-cross-platform-document-oriented-database-program-90.png" alt="" class = "skills__icon" id="mongodb_icon"/>-->
-                        <!--<img src="assests/img/icons8-git-90.png" class = "skills__icon" id="mysql_icon"/>-->
-                        <!--<img src="assests/img/icons8-office-365-90.png" class = "skills__icon" id="office365"/>-->
-
+                        
+                       
                     </div>
                 </div>
-       
+        -->
             </section>
 
             <!--==================== PROJECT CARD ====================-->
@@ -168,101 +212,202 @@
                 <h2 class="section__title">Projects</h2>
                 <span class="section__subtitle"></span>
 
+                
+
                 <div class="projects__containe container">
+                  
                     <div class="article-container">
-
-                    </article>
-                    <article class="article-card">
-                        <figure class="article-image">
-                            <img src="assests/img/work1.png" alt="project1"/>
-                        </figure>
-                        
+                    <article class="article-card">            
                         <div class="article-content">
-                            <a herf="#" class="card-category"></a>
-                            <h3 class="card-title">COGS Cafeteria and Catering Management System</h3>
-                            <p class="card-excerpt">I have built a web application to help my campus cafeteria to management their product and order. In this project, I have learned the 3 tier concept.<br>
-                                1. Layer of Front end: UI with HTML, CSS, javascript, bootstrap<br>
-                                2. Layer of Backend: Python with Flask<br>
-                                3. Layer of Database: MySQL</p>
-                            
-                             <a href="work2.html" class="button button--flex button--small portfolio__button" id="portfolio1__button">
-                                Demo<i class="uil uil-external-link-alt button__icon"></i>  
-                            </a>
-                            <a href="https://github.com/JuneKTMan/cogscsystem" target="_blank" class="button button--flex button--small portfolio__button" id="portfolio1__button">
-                                repo<i class="uil uil-github-alt button__icon"></i>  
-                            </a> 
+                            <div class ="row">
+                                <div class = "column left">
+                                    <a herf="#" class="card-category"></a>
+                                    <h3 class="card-title">My Cheat Book Application</h3>
+                                    <p class="card-excerpt">A web application used to support programming learning. User can write
+                                        In this application, they can save their coding cheat sheet and study resources from the internet.
+                                        Users can save their cheat code as a bookmark and search the record by category. </p>
+                                        <br>
+
+                                    <span class="label tech">HTML</span>
+                                    <span class="label tech">CSS</span>
+                                    <span class="label tech">bootstrap 5</span>
+                                    <span class="label tech">JavaScript</span>
+                                    <span class="label tech">PHP</span>
+                                    <span class="label tech">AJAX</span>
+                                    <span class="label tech">MySQL</span>
+
+                                    <br><br>
+                                
+                                        <div>
+                                            <a href="work1.html" class="button button--flex button--small portfolio__button" id="portfolio1__button">
+                                                Case Study<i class="uil uil-external-link-alt button__icon"></i>  
+                                            </a>
+                                            <a href="https://github.com/JuneKTMan/MyCheatSheetEditor.git" target="_blank" class="button button--flex button--small portfolio__button" id="portfolio1__button">
+                                                Git Repo<i class="uil uil-github-alt button__icon"></i>  
+                                            </a>
+                                        </div>                              
+        
+                                </div>
+                                <div class = "column right">
+                                    <iframe class="card__video" width="400" height= "250" src="https://youtube.com/embed/z14iv6M2zis"></iframe> 
+                                </div>   
                         </div>
-                        
+                        </div>     
                     </article>
+
+                    <article class="article-card">            
+                        <div class="article-content">
+                            <div class ="row">
+                                <div class = "column left">
+                                    <a herf="#" class="card-category"></a>
+                                    <h3 class="card-title">Cafeteria Management System</h3>
+                                    <p class="card-excerpt">A tool to support cafeteria operations and product management.
+                                        Orders, menus, and inventory can all be customised in a single tool. </p>
+                                        <br>
+
+                                    <span class="label tech">HTML</span>
+                                    <span class="label tech">CSS</span>
+                                    <span class="label tech">bootstrap 5</span>
+                                    <span class="label tech">JavaScript</span>
+                                    <span class="label tech">Python</span>
+                                    <span class="label tech">Flask</span>
+                                    <span class="label tech">MySQL</span>
+
+                                    <br><br>
+                                
+                                        <div>
+                                            <a href="work2.html" class="button button--flex button--small portfolio__button" id="portfolio1__button">
+                                                Case Study<i class="uil uil-external-link-alt button__icon"></i>  
+                                            </a>
+                                            <a href="https://github.com/JuneKTMan/cogscsystem.git" target="_blank" class="button button--flex button--small portfolio__button" id="portfolio1__button">
+                                                Git Repo<i class="uil uil-github-alt button__icon"></i>  
+                                            </a>
+                                        </div>                              
+        
+                                </div>
+                                <div class = "column right">
+                                    <iframe class="card__video" width="400" height= "250" src="https://youtube.com/embed/JXrCAe2oZQ8"></iframe> 
+                                </div>   
+                        </div>
+                        </div>     
+                    </article>
+
+                    <article class="article-card">            
+                        <div class="article-content">
+                            <div class ="row">
+                                <div class = "column left">
+                                    <a herf="#" class="card-category"></a>
+                                    <h3 class="card-title">Music Android Application</h3>
+                                    <p class="card-excerpt">This music app is a prototype of what is essentially a music based social media app. Within it,
+                                        You'd have an account that's also linked to your Spotify account, and it'd work the same way.
+                                        Use your Spotify account to display your top 5 favourite artists and their music.
+                                        With the shake sensor feature, you could randomly select your playlist with a shake. 
+                                         </p>
+                                        <br>
+
+                                    <span class="label tech">Group Project</span>
+                                    <span class="label tech">Azure DevOps</span>
+                                    <span class="label tech">Scrum</span>
+                                    <span class="label tech">Java</span>
+                                    <span class="label tech">XML</span>
+                                    <span class="label tech">PHP</span>
+                                    <span class="label tech">Spotify Android API</span>
+                                    <span class="label tech">MySQL</span>
+
+                                    <br><br>
+                                
+                                        <div>
+                                            <a href="work4.html" class="button button--flex button--small portfolio__button" id="portfolio1__button">
+                                                Case Study<i class="uil uil-external-link-alt button__icon"></i>  
+                                            </a>
+                                            <a href="https://github.com/JuneKTMan/MusicMobileApp.git" target="_blank" class="button button--flex button--small portfolio__button" id="portfolio1__button">
+                                                Git Repo<i class="uil uil-github-alt button__icon"></i>  
+                                            </a>
+                                        </div>                              
+        
+                                </div>
+                                <div class = "column right">
+                                    <iframe class="card__video" width="400" height= "250" src="https://youtube.com/embed/yXPsMGuBO3w"></iframe> 
+                                </div>   
+                        </div>
+                        </div>     
+                    </article>
+
+                    <article class="article-card">            
+                        <div class="article-content">
+                            <div class ="row">
+                                <div class = "column left">
+                                    <a herf="#" class="card-category"></a>
+                                    <h3 class="card-title">Review Comments Management</h3>
+                                    <p class="card-excerpt">This application is intended to track the project's source code review comments,
+                                        to ensure that the code review process was completed satisfactorily.
+                                       (i.e., reviews were completed, and feedback was addressed).
+                                        In Java, user can run this application to track the comment review.
+                                        </p>
+                                        <br>
+
+                                    <span class="label tech">Java</span>
+                                    <span class="label tech">Java Swing</span>
+
+                                    <br><br>
+                                
+                                        <div>
+                                            <a href="work3.html" class="button button--flex button--small portfolio__button" id="portfolio1__button">
+                                                Case Study<i class="uil uil-external-link-alt button__icon"></i>  
+                                            </a>
+                                            <a href="https://github.com/JuneKTMan/ReviewCommentsManagement.git" target="_blank" class="button button--flex button--small portfolio__button" id="portfolio1__button">
+                                                Git Repo<i class="uil uil-github-alt button__icon"></i>  
+                                            </a>
+                                        </div>                              
+        
+                                </div>
+                                <div class = "column right">
+                                    <iframe class="card__video" width="400" height= "250" src="https://youtube.com/embed/-QbBdNgpRRw"></iframe> 
+                                </div>   
+                        </div>
+                        </div>     
+                    </article>
+                    
                         
 
-                        <article class="article-card">
-                            <figure class="article-image">
-                                <img src="assests/img/work2.png" alt="project2"/>
-                            </figure>
-                            
-                            <div class="article-content">
-                                <a herf="#" class="card-category"></a>
-                                <h3 class="card-title">virtual Assistant by Python</h3>
-                                <p class="card-excerpt">In this project, I have learned how to use different python module and internal library to build a python Virtual Assistant.</p>
-                                
-                                 <a href="work3.html" class="button button--flex button--small portfolio__button" id="portfolio1__button">
-                                    Demo<i class="uil uil-external-link-alt button__icon"></i>  
-                                </a>
-                                <a href="https://github.com/JuneKTMan/virtualAssistant_Jun" target="_blank" class="button button--flex button--small portfolio__button" id="portfolio1__button">
-                                    repo<i class="uil uil-github-alt button__icon"></i>  
-                                </a> 
-                            </div>
-                            
-                        </article>
-                        <article class="article-card">
-                            <figure class="article-image">
-                                <img src="assests/img/work3.png" alt="project3"/>
-                            </figure>
-                            
-                            <div class="article-content">
-                                <a herf="#" class="card-category"></a>
-                                <h3 class="card-title">Catch the Red! Avoid the Black!   2D game</h3>
-                                <p class="card-excerpt">This project is a 2D pong game built by python with Tkinter. This game 
-                                    is used to train the user's body reaction, the player can 
-                                    control the paddle in this game, the mission of the player is to catch all the red circles by 
-                                    controlling the paddle and avoiding being hit by the black circle.</p>
-                                
-                                 <a href="work1.html" class="button button--flex button--small portfolio__button" id="portfolio1__button">
-                                    Demo<i class="uil uil-external-link-alt button__icon"></i>  
-                                </a>
-                                <a href="https://github.com/JuneKTMan/Catch_the_red_Avoid_the_black_and_Project_Doc.git" target="_blank" class="button button--flex button--small portfolio__button" id="portfolio1__button">
-                                    repo<i class="uil uil-github-alt button__icon"></i>  
-                                </a> 
-                            </div>
-                            
-                        </article>
-                        <article class="article-card">
-                            <figure class="article-image">
-                                <img src="assests/img/work4.jpg" alt="project4"/>
-                            </figure>
-                            
-                            <div class="article-content">
-                                <a herf="#" class="card-category"></a>
-                                <h3 class="card-title">Projectile Simulator - java</h3>
-                                <p class="card-excerpt">This Java program will demonstrate classes, inheritance, and threads. 
-                                    And the animation is simulating the motion of projectile movement with physical logic.</p>
-                                
-                                 <a href="work4.html" class="button button--flex button--small portfolio__button" id="portfolio1__button">
-                                    Demo<i class="uil uil-external-link-alt button__icon"></i>  
-                                </a>
-                                <a href="https://github.com/JuneKTMan/projectile_simulator.git" target="_blank" class="button button--flex button--small portfolio__button" id="portfolio1__button">
-                                    repo<i class="uil uil-github-alt button__icon"></i>  
-                                </a> 
-                            </div>
-                            
-                        </article>
+                        
                     </div>
                 </div>
             </section>
 
+             <!--==================== ABOUT ====================-->
+            <section class="about section" id="about" style ="background-color:white;">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="about__container container grid">
+                    <!-- <img src="assests/img/selfphoto.png" alt="" class="about__img"> -->
+
+                    <div class="about__data">
+                        <p class="about__description">I am currently an IT programming student at Nova Scotia Community College 
+                            and set to graduate in 2023. I have a strong passion for coding and am always eager to take on new challenges.
+                        <br>
+                        <br>
+                        As a student, I have taken on several projects that have allowed me to apply my knowledge and skills in a practical setting. 
+                        I am particularly interested in full-stack development and am eager to work on both front-end and back-end development.
+                        <br>
+                        <br>
+                        Aside from coding, I absolutely enjoy working out, testing out a new recipe, or listening to podcasts.
+                        </p>
+                        <br>
+                        <br>
+
+                        <div class="about__buttons">
+                            <a download="" href="assests/pdf/resume_katinjuneman.pdf" target="blank" class="button button--flex">
+                                Download my resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>        
+            </section>
+
             <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
+            <section class="contact section" id="contact" style ="background-color:white;">
                 <h2 class="section__title">Contact Me</h2>
                 <span class="section__subtitle"></span>
 

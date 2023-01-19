@@ -8,7 +8,7 @@
 :root {
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
+    /*========== Colors#section ==========*/
     /* Change favorite color, use var to control the hue colour */
     --hue-color: 200; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
@@ -36,6 +36,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
+    --h4-font-size: 1.05rem;
     --normal-font-size: 1rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
@@ -65,11 +66,11 @@
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
     :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
+        --big-font-size: 2.5rem;
+        --h1-font-size: 2rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
+        --normal-font-size: 1.05rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
@@ -114,11 +115,16 @@ img{
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
-    padding: 2rem 0 4rem;
+    padding: 3rem 0 6rem;
 }
 
 .section__title{
     font-size: var(--h1-font-size);
+}
+
+.section__title__work{
+    font-size: var(--h1-font-size);
+    justify-self: start;
 }
 
 .section__subtitle{
@@ -133,7 +139,7 @@ img{
 }
 /*==================== LAYOUT ====================*/
 .container{
-    max-width: 768px;
+    max-width: 968px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
@@ -274,7 +280,8 @@ img{
 }
 
 .home__catpic{
-    width: 320px;
+    width: 360px;
+    border-radius: 50%;
 }
 
 .home__data{
@@ -347,6 +354,61 @@ img{
     display: inline-flex;
     align-items: center;
 }
+/*==================== WORK BUTTONS ====================*/
+a.work__button {
+    background-color: var(--first-color);
+    border: none;
+    color: #FFF;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: .5rem;
+  }
+
+  a.work__button__left {
+    background-color: var(--first-color);
+    border: none;
+    color: #FFF;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: .5rem;
+  }
+
+  a.work__button__right {
+    background-color: var(--first-color);
+    border: none;
+    color: #FFF;
+    padding: 10px 20px;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-right: 0;
+    
+  }
+
+/*==================== HR ELEMENTS ====================*/
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color:gray;
+    background-color:gray
+  }
+
 /*==================== ABOUT ====================*/
 .about__img{
     width: 160px;
@@ -397,7 +459,7 @@ img{
 /*==================== PROJECT CARD ====================*/
 .article-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
     gap: 2rem;
 }
 
@@ -416,6 +478,7 @@ img{
 .article-card{
     background: white;
     border-radius: 20px;
+    height: 400px;
     transition: 0.3s;
 }
 
@@ -426,6 +489,7 @@ img{
 
 .article-content{
     padding: 2rem;
+    height: 300px;
 }
 
 .article-content .card-category{
@@ -443,11 +507,147 @@ img{
     padding: 0.5rem;
 }
 
+.card__video{
+    width:100%;
+    max-height:auto;
+    border-radius: .75rem;
+    justify-self: center;
+}
+
 
 /* This part is for the popup window of portfolio*/
 .portfolio1__video{
     width: 100%
 }
+
+
+
+/* ======    WORK CARD SECTION   ================*/
+* {
+    box-sizing: border-box;
+  }
+
+  /* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 400px; 
+  }
+  
+  .left {
+    width: 50%;
+  }
+  
+  .right {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* word card tech label */
+  .label {
+    color: white;
+    padding: 4px;
+    font-family: Arial;
+    font-size: 0.85rem;
+  }
+  .tech {background-color: var(--first-color-alt)} /* Green */
+  
+
+/*===========Slide show container of work===============*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 /*==================== WORK 1 ====================*/
 
@@ -480,10 +680,22 @@ img{
     margin-bottom: var(--mb-0-75);
 }
 
+.work__content{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+    color: rgb(63, 63, 63);
+}
+
+.work__small_content{
+    font-size: var(--h4-font-size);
+    margin-bottom: var(--mb-0-75);
+    color: rgb(63, 63, 63);
+}
+
 .work__description{
     text-align: left;
     font-size: var(--normal-font-size);
-    color: var(--text-color-light);
+    color: var(--text-color);
     margin-bottom: var(--mb-3);
 }
 
@@ -815,7 +1027,7 @@ button[type="submit"]--flex{
 
     .article-card{
         display: grid;
-        grid-template-rows: 220px 1fr;
+        grid-template-rows: 200px 1fr;
     }
 
     .portfolio__img{

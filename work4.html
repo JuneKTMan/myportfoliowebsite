@@ -12,6 +12,7 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assests/css/styles.css">
+        <link rel="stylesheet" href="assests/css/multslide.css">
 
         <title>June Man Portfolio</title>
     </head>
@@ -29,12 +30,7 @@
 
                             </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="index.html#about" class="nav__link">
-                                <i class="uil uil-user-circle nav__icon"></i> About Me
-
-                            </a>
-                        </li>
+                        
                         <li class="nav__item">
                             <a href="index.html#skills" class="nav__link">
                                 <i class="uil uil-file-check-alt nav__icon"></i> Skills
@@ -44,6 +40,12 @@
                         <li class="nav__item">
                             <a href="index.html#project" class="nav__link">
                                 <i class="uil uil-suitcase nav__icon"></i> Projects
+
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#about" class="nav__link">
+                                <i class="uil uil-user-circle nav__icon"></i> About Me
 
                             </a>
                         </li>
@@ -71,44 +73,132 @@
             
             <!--==================== WORK 1 ====================-->
             <section class="work section" id="work">
-                <h2 class="section__title">Projectile Simulator by Java</span>
-
-                <div class="work  container container">
-                    <iframe class="work__video" width="720" height= "480" src="https://www.youtube.com/embed/CTQQpG_48js"></iframe>
-                   
-                    <div class="work__data">
-                        <h2 class="work__title">2D Animation built by java</h2>
-                        <p class="work__description">This Java program will demonstrate classes, inheritance, and threads. 
-                            And the animation is simulating the motion of projectile movement with physical logic.</p>
-
-                        <h2 class="work__title">Technologies</h2>
-                        <p class="work__description">  
-                            * java 17.0.1<br>
-                            * eclipse<br>
-                                                    
-                        <h2 class="work__title">Instruction</h2>
-                        <p class="work__description">  
-                            1. Clone the repo https://github.com/JuneKTMan/projectile_simulator.git<br>
-                            2. Open the project folder by eclipse or other IDE. <br>
-                            3. Run the Project folder > projectile_test> mainpanel_projectile.java</p>
-
-                        <h2 class="work__title">Project Document of Projectile Simulator - Java project</h2>
-                        <p class="work__description">File name: Project_Document_Projectile_simulator.pdf 
-                            Project document including the blueprint and the class and method design of this 2D animation.</p>
-
-                    </div>
-
+  
+                <div class="work container container">
+                    <h1 class="section__title__work">Music Android Application</span>
+                    
                     <div class="work__link">
 
-                        <a href="https://github.com/JuneKTMan/projectile_simulator/blob/main/Project_Document_Projectile_simulator.pdf" target="blank" class="work__link">
+                        <!----<a href="https://github.com/JuneKTMan/Catch_the_red_Avoid_the_black_and_Project_Doc/blob/main/unitTest_report/projectDoc_CRAB.pdf" target="blank" class="work__link">
                             Download Project Document<i class="uil uil-external-link-alt button__icon"></i><br>
-                        </a>
-                        <a href="https://github.com/JuneKTMan/projectile_simulator" target="blank" class="work__link">
+                        </a>----->
+                       
+                        <a href="https://github.com/JuneKTMan/MusicMobileApp.git" target="blank" class="work__button">
                             My Git Repositories<i class="uil uil-github-alt button__icon"></i>
                         </a>
                     
                     </div>
-   
+                    <br>
+                    <iframe class="work__video" width="720" height= "480" src="https://youtube.com/embed/yXPsMGuBO3w"></iframe> 
+
+                    <div class="work__data">
+                        <br><br>
+                        <h2 class="work__title">Project Overview</h2>
+                        <hr>
+                        <h3 class="work__content">Group Project</h3>
+                        <h4 class="work__small_content">Contributors: Kayla Giles / June Man</h4>
+                        <p class="work__description">
+                            This music app is a prototype of what is essentially a music/musician based social media app. Within it, 
+                            you would have an account that is also linked to your Spotify account. What this mean is your profile 
+                            would be populated with your info (Name/Username, a self-created bio about yourself, etc...), and it will 
+                            use your Spotify account to display things like your top 5 favorite artists and music by them. This would 
+                            all be displayed through their profile through multiple pages that would accurately represent what 
+                            music this user loves and the ability to share that with others through their profile (via some sort of 
+                            share link(s).
+
+                            <br>
+                            In this group project, I mainly respond for the application UX, UI and scroll view design.
+                        </p>
+
+                        <div class="slideshow-container">
+                            <!-- Full-width images with number and caption text -->
+                          <div class="mySlides">
+                              <div class="numbertext">1 / 4</div>
+                              <img src="assests/img/work/devops_1.jpg" style="width:100%">
+                              <div class="text">Sprint 1-4</div>
+                          </div>
+
+                          <div class="mySlides">
+                              <div class="numbertext">2 / 4</div>
+                              <img src="assests/img/work/devops_2.jpg" style="width:100%">
+                              <div class="text">Assign work to each contributor</div>
+                          </div>
+
+                          <div class="mySlides">
+                              <div class="numbertext">3 / 4</div>
+                              <img src="assests/img/work/devops_3.jpg" style="width:100%">
+                              <div class="text">Repos</div>
+                          </div>
+
+                          <div class="mySlides">
+                              <div class="numbertext">4 / 4</div>
+                              <img src="assests/img/work/devops_4.jpg" style="width:100%">
+                              <div class="text">Project readme</div>
+                          </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                            </div> 
+                        
+                        
+                        <br><br>
+                                        
+                        <h2 class="work__title">Features</h2>
+                        <hr>
+                        <p class="work__description">
+
+                            1. Create account <br>
+                            2. Spotify Connection <br>
+                            3. Shake Sensor Feature <br>
+                            4. Random/ Select to play music from your favorite playlists <br>
+                        
+                           </p>
+
+                           <div class="slideshow-container">
+                            <!-- Full-width images with number and caption text -->
+                          <div class="">
+                              <img src="assests/img/work/music_app_2.jpg" style="width:100%">
+                              <div class="text"></div>
+                          </div>
+
+                          <br>
+
+
+                          
+                        
+                        <br><br><br>
+                        <h2 class="work__title">Technologies Used</h2>
+                        <hr>
+                        <p class="work__description">
+                            Android Studio<br>
+                            Spotify Android API<br>
+                            UI design<br>
+                            UX design<br>
+                            Java<br>
+                            XML<br>
+                            PHP<br>
+                            MySQL<br>
+                        </p>
+                          
+                    </div>
+                    <div class="work__link">
+                        <a href="work3.html" class="work__button__left">
+                            <i class="uil uil-angle-left-b button__icon"></i>Previous Project</i>
+                        </a>
+                        <a href="work1.html" class="work__button__right">
+                            Next Project<i class="uil uil-angle-right-b button__icon"></i>
+                        </a>
+                    </div>
                 </div>        
             </section>
 
@@ -164,7 +254,11 @@
         <script src="assests/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src="assests/js/main.js"></script>
-        <script src="assests/js/timer.js"></script>
+      <script src="assests/js/main.js"></script>
+        <script src="assests/js/timer.js"></script> 
+
+
+        <!--==================== MULTIPLE SLIDE ====================-->
+        
     </body>
 </html>
